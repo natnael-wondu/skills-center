@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+  <head>
+     <meta charset="UTF-8">
+     <meta name="Author" content="Natnael Wondu">
+     <meta name="description" content="web intro for beginers">
+     <meta name="keywords" content="HTML, front end developement, server request">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+     <title>
+         Products- KIoT skills center
+     </title>
+     <link rel="stylesheet" href="styles.css">
+     <script src="https://kit.fontawesome.com3131841332" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+  </head>
+  <body>
+     <header>
+       <div class="header_container">
+        <div class="logo">
+            <img src="images/logo.png" alt="website logo">
+            <h1> 
+              KIoT&nbsp;Skills&nbsp;Center
+            </h1>
+        </div>
+        <div class="header_buttons">
+         <input style="display: none;" type="text">
+         <button class="search_bar">
+            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+         </button>
+         <button class="nav_toggle">
+          <i class="fa-solid fa-bars fa-2x"></i>
+         </button>
+        </div> 
+        <div class="nav_menu" style="display: none;">
+            <ul type="none">
+                <li><a href="index.html">Home</a></li>
+                <hr>
+                <li><a href="cources.html">cources</a></li>
+                <hr>
+                <li><a href="about.html">About Us</a></li>
+                <hr>
+                <li><a href="resources.html">Suplimental& Resources</a></li>
+                <hr>
+                <li><a href="mission&vission.html">Mission& Vission </a></li>
+            </ul>
+      </div>
+       </div>
+     </header>
+     
+     
+     <div>
+         <h2>
+             Our Products
+         </h2>
+         <p style="font-size: 12">
+            SELLECTED COLLABORATIVE PROJECTS BY OUR DEPARTMENT'S STUDENTS AND STAFF:
+            <ol>
+               <li>EthioCpenCourseWare for Wollo University eopcw.wu.edu.et</li>
+               <li>Tace Me App for COVID-19 Tracking</li>
+               <li>Wireless Mechanical Ventilator for ICU patients</li>
+               <li>Ministry Rostering System for Kombolcha City Education Office</li>
+               <li>Ethio-Donation System and Amhara-Donation System</li>
+               <li>AddressMe Schooling Web and Mobile App</li>
+               <li>Abisinya Journal Publication Management System</li>
+               <li>Seblen Plant Disease Detection System</li>
+               <li>ERP integrated System for Wollo University</li>
+               <li>Amhara Development Association Website and Web Portal (ada.org.et),</li>
+               <li>South Wollo Website and Web Portal (southwollocommunication.gov.et),</li>
+               <li>Amhara Unversities Forum Website and South Wollo Zone Tourism Office Website</li>
+               <li>Course Material and Exam BankApplication</li>
+               <li>COC Management System for South Wollo Zone</li>
+ 
+            </ol>
+         </p>
+     </div>
+     
+     
+     <footer>
+      <div class="footr_content">
+        <div class="home">
+          home:
+          <a href="index.html">
+            <i class="fa-solid fa-house fa-2x"></i>
+          </a>
+        </div>
+        
+        <div class="social_icons">
+         contact us: 
+       
+          <a href="https://t.me/wollostu" target="_blank">
+             <i class="fa-solid fa-paper-plane fa-3x"></i>
+          </a>
+          <a href="https//:www.linkedin.com/school/wollo-university/" target="_blank">
+            <i id="linkedIn"  class="fa-brands fa-linkedin fa-3x"></i>
+          </a>
+          <a id="youtube_icon" href="http://www.youtube.com/@WolloUniversity1" target="_blank">
+             <i class="fa-brands fa-youtube fa-3x"></i>
+          </a>
+          <a href="https://www.facebook.com/WolloUniversity111/" target="_blank">
+             <i class="fa-brands fa-facebook fa-3x"></i>
+          </a>
+        </div>
+          
+        <br>
+
+        <div id="phone_icon" class="my_contact">
+          Contact the developer:
+          <a id="envelope_icon" href="mailto:writefornatnael@gmail.com">
+            <i class="fa-solid fa-envelope fa-2x"></i>
+          </a>
+          <a  href="tel:+251927376051">
+            <i class="fa-solid fa-phone fa-2x"></i>
+             +251 927 376 051
+           </a>
+        </div>
+      </div>
+     </footer>
+     <script>
+           
+        
+  
+        const navToggle = document.querySelector('.nav_toggle');
+        const navMenu = document.querySelector('.nav_menu');
+  
+   
+        navToggle.addEventListener('click', function(event) {
+             event.stopPropagation();
+  
+          navMenu.style.display = navMenu.style.display === 'none' || navMenu.style.display === '' ? 'block' : 'none';
+          navMenu.classList.toggle('show');
+  });
+        document.addEventListener('click', function(event) {
+           if (!navMenu.contains(event.target) && !navToggle.contains(event.target)) {
+               navMenu.style.display = 'none';   
+               navMenu.classList.remove('show');   
+      }
+  });
+   
+       </script>
+   </body>
+</html>

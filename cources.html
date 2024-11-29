@@ -1,0 +1,398 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+     <meta charset="UTF-8">
+     <meta name="Author" content="Natnael Wondu">
+     <meta name="description" content="web intro for beginers">
+     <meta name="keywords" content="HTML, front end developement, server request">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+     <title>
+         KIoT-Learn Front End
+     </title>
+     <link rel="stylesheet" href="styles.css">
+     <script src="https://kit.fontawesome.com3131841332" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+  
+
+      
+    </head>
+  <body>
+     <header>
+       <div class="header_container">
+        <div class="logo">
+            <img src="images/logo.png" alt="website logo">
+            <h1> 
+              KIoT&nbsp;Skills&nbsp;Center
+            </h1>
+        </div>
+        <div class="header_buttons">
+         <input class="search_input" style="display: none;" type="text" placeholder="Search...">
+         <button class="search_bar">
+            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+         </button>
+         <button class="nav_toggle">
+          <i class="fa-solid fa-bars fa-2x"></i>
+         </button>
+        </div> 
+        <div class="nav_menu" style="display: none;">
+          <ul type="none">
+            <ul type="none">
+              <li><a href="index.html">Home</a></li>
+              <hr>
+              <li><a href="cources.html">cources</a></li>
+              <hr>
+              <li><a href="about.html">About Us</a></li>
+              <hr>
+              <li><a href="products.html">Our products</a></li>
+              <hr>
+              <li><a href="resources.html">Suplimental Resources</a></li>
+              <hr>
+              <li><a href="mission&vission.html">Mission& Vission </a></li>
+          </ul></ul>
+      </div>
+       </div>
+     </header>
+     <div>
+     
+      <a href="#elements&tags">
+         <button class="direction_button">
+             Core HTML elements
+         </button>
+      </a>
+      <a href="#attributes">
+         <button class="direction_button">
+             Atributes
+         </button>
+      </a>
+      <a href="#images">
+         <button class="directionButton">
+           Images    
+         </button>
+       </a>
+      <a href="#links">
+         <button class="directionButton">
+             links
+         </button>
+      </a>
+     </div>
+     
+     <div class="content">
+      <h2 class="overview">
+        Web overview
+     </h2>
+
+     <div class="box_with_image">
+       <p id="initial_process">
+         When you search for information online, your device sends a request to a search engine like Google. The search engine's servers then process your query and return a list of relevant results. Clicking on one of these results takes you to the website you're interested in.
+       </p>
+    
+    
+      <img id="diagram" src="images/search_diagram.png" alt="diagram of web search process">
+      <p id="protocol">
+        The communication between your device and the website's servers happens over the HTTP, HyperText Transfer Protocol (it is a protocol which is the foundation of the World Wide Web.) To ensure secure communication and protect sensitive information, many websites use HTTPS, a more secure version of HTTP that encrypts data. A website is typically hosted on multiple servers to handle the traffic, ensure reliability and for other advantages. 
+      </p>
+      <p id="WebTerms">
+        Websites are collections of interconnected pages, A single page on the website is called a webpage. The pages are linked together using <a href="#links">HyperText</a>. These links allow you to navigate from one page to another within a website or to other websites entirely. 
+      </p>
+     
+      <p>
+     Each page on a website is an HTML document that contains text, images, links, and other elements that are displayed in your web browser.
+      </p>
+    </div>
+
+      <h3 class="out_of_topic">
+         Client side Vs Server side...
+      </h3>
+      <p class="out_of_topic">
+     Every website has two (parts), front end and back end.
+      </p>
+      
+      <div class="box">
+      <p> The front end is the user friendly interference. It is developed by the three languages: 
+       <ol>
+         <li>HTML(HyperText Markup Language) tells the browser where to put what elements, just like a building starts by putting blocks,irons, and later the (pre-installetion/wires),
+         <li>CSS (Cascading Styling Sheet) which is all about styling: coloring, margin, backgrounds, hover effects and other bunch of styles of the page, just like decorations for the building.
+         <li>JavaScript takes care of functionality: of buttons, searching process, and much more. 
+       </ol>
+       </p>
+      </div> 
+      
+      <div class="box_with_image">
+      <p>
+       Suppose the website you created is a users portal. Users have to login first time they visit our page to get service, and  sign in every time they visit again. The website checks wether the username and password matches and let them in, or discard their http request. The result of the page displayed is also unique for every user. These are all the results of backend development. The back end controls various things like:
+        <ul>
+          <li>
+            users data,
+          </li>
+          <li>
+            Authentication& Authorization,
+          </li>
+          <li>
+            transaction details & billing systems,
+          </li>
+          <li>
+            API data, etc.
+          </li>
+        </ul> 
+      </p>
+      <img id="ranking" src="images/ranking.webp" alt="most popular server-side programing languages">
+      <p id="description">
+         The languages used for the backend development depends on the project requirements, developers preference, and use cases, but commonly JavaScript (Node.js), python, PHP, java, C#, typescript are used.
+      </p>
+      </div>
+     <h3 class="outOfTopic">
+        Is HTML not a programing language?
+     </h3>
+     <p class="outOfTopic">
+     HTML is a Markup language not a programing language. Markup is all about an instruction for the browser where to put what elements. While a programing language tells the computer what to do.
+     </p>
+      <!-- <h3>
+         Syntax of html 
+     </h3> 
+     <p>
+         
+     </p> -->
+     <div class="box">
+     <h3 id="elements&tags">
+        HTML elements & tags
+     </h3>
+     <p>
+       Tags define the starting and ending of elements, like: pair of p tags (<strong> &lt;p&gt; &lt;/p&gt;</strong>) defines a paragraph. The first tag is opening tag While the second tag with slash sign is the closing tag. 
+     </p>
+     <p>
+       The paragraph we want to display goes between the two p tags. The opening tag, the content inside and the closing tag makes up an element, the buildig blocks that define structure and content of the webpage. 
+     </p>
+     <p>
+       While most html elements require closing tag, there are some in which closing tag is optional and there are also Void elements that do not have closing tag at all.
+       <ol type="i">
+         <li> void elements( self closing tags)
+           <ul>
+             <li> <strong> &lt;img&gt; </strong> inserts images
+             <li> <strong> &lt;hr&gt; </strong> create a horizontal line
+             <li> <strong> &lt;br&gt; </strong> inserts a line break
+             <li> <strong> &lt;input&gt; </strong> creats input control
+           </ul>
+         <li> some elements with optional closing tags are:
+           <ul>
+             <li> <strong> &lt;p&gt; </strong>  tag: the brawser can figure where the paragraph ends when it encounters opening tag of the next paragraph as p tags canot be nested under another p tag,   
+             <li> <strong> &lt;li&gt; </strong>  used for listing items, nessesaryly being nested under  &lt;ol&gt; for orderd list or &lt;ul&gt;, for unorderd list
+             <li> <strong>  &lt;body&gt; </strong> and even
+             <li> <strong> &lt;html&gt; </strong> are technically optional not to include a closing tag for the same reson as &lt;p&gt; tags.
+           </ul>
+       </ol>
+     </p>
+     </div>
+     
+     <div class="box">
+     <h3 id="links">
+        Links
+     </h3>
+     <p> 
+     HyperText is a broad term that refers to a text that contains links to other pages. A link on the other hand is an element on a webpage, when clicked, navigates to other location. The element can be text or image but clickable. 
+     </p>
+     <p>
+     We use &lt;a&gt; element, short for anchor, with href attribute, short for HyperText reference to create a link. the syntax looks like:
+     <br>
+      <strong> &lt;a href="the URL goes here"&gt;
+          <a href="#links">
+              the text/ img we want to make clickable comes here
+          </a>
+          <br>
+      &lt;/a&gt;
+      <br>
+      </strong> 
+      For the URL to open in a new tap, we can use the <strong> target="_blanck" </strong> attribute. 
+     </p>
+     </div>
+     
+     <div class="box">
+     <h3 id="attributes">
+        HTML attributes
+     </h3>
+     <p>
+         Attributes are key-value pairs written within the opening tag of elements, like: name="value". They spacify things like elements behaviour, apperance or relation with other elements. 
+     </p>
+     <p>
+         Some important attributes are:
+         <ol>
+          
+           <li> <strong> 'style': </strong> Allows you to apply inline CSS styles directly to an element for custom styling.
+            
+           <li> <strong>'title':</strong> Provides additional information about an element, typically displayed as a tooltip when the user hovers over the element.
+           <li> <strong>'target':</strong> spacifies where to open the linked documents.
+           <li> <strong>'id':</strong> Used to uniquely identify an element on the page, for stylingand scrypting purpose. It should be unique within the document.
+           <li> <strong> 'class':</strong> Used to assign one or more class names to an element for styling and scripting purposes. Multiple elements can have the same class.                   
+         </ol>
+     </p>
+     
+      <div class="scrollable_box">
+        <h4>
+          Rulles and recommendations for assigning id and class
+         </h4>
+        <p>
+         <h5> Rulles for id:</h5>  
+         <ol>
+          <li>
+            1. Uniqueness: An id must be unique within a single HTML document. You cannot have multiple elements with the same id. This ensures that each id refers to one specific element.
+          </li>
+          <li>
+            2. Validity: The value of the id attribute must start with a letter (a-z or A-Z) or an underscore (_), followed by any combination of letters, digits (0-9), hyphens (-), underscores (_), and periods (.). It cannot start with a digit (0-9).
+          </li>
+          <li>
+            3. No spaces: The value of an id cannot contain spaces. If you need to represent a multi-word value, you can use hyphens (-), underscores (_), or camelCase.
+          </li>
+          <li>
+            4. No special characters: Avoid using special characters like @, #, $, or %. Stick to alphanumeric characters, hyphens, and underscores.
+          </li>
+         </ol>
+                             <br>
+          <h5>Recommendations for id:</h5>  
+          <ol type="i">
+            <li>
+              1. Meaningful names: Choose an id that clearly describes the element's purpose or role in the document (e.g., header, footer, menu, content).
+            </li>
+            <li>
+              2. Avoid generic IDs: Use descriptive names instead of overly generic ones like box1, item, or div1.
+            </li>
+            <li>
+              3. Use IDs for JavaScript/CSS targeting: Use the id attribute when you need to target an element specifically with JavaScript (e.g., document.getElementById('header')) or CSS (e.g., #header { ... }).
+            </li>
+          </ol>
+        </p>
+       
+        <p>
+          <br>
+          <h5>Rulles for class: </h5> 
+          <ol>
+            <li>
+              1. Non-uniqueness: Unlike id, a class can be used by multiple elements. You can assign the same class to multiple elements to apply the same style or behavior to them.
+            </li>
+            <li>
+              2. Validity: Class names must start with a letter (a-z or A-Z) or an underscore (_), but they can also contain numbers (0-9), hyphens (-), and underscores (_). They should not contain spaces. Multiple classes can be applied to an element by separating them with a space.
+            </li>
+            <li>
+              3. No leading or trailing spaces: The class name must not have leading or trailing spaces. The browser automatically trims spaces around the class value, but it's better to avoid this in your HTML.
+            </li>
+          </ol>
+                   <br>                  
+          <h5>Reccomendations for class:</h5> 
+          <ol type="i">
+            <li>
+              1. Use descriptive and meaningful names: Class names should describe the role or appearance of an element (e.g., button-primary, card-container, nav-link).
+            </li>
+            <li>
+              2. Use hyphens or underscores for readability: If your class name is composed of multiple words, separate them using hyphens (-) or underscores (_) to make it readable.
+              Example: main-header, featured-product, product_list.
+              Be consistent: Choose a naming convention and stick with it across your project. Common naming conventions include:
+              BEM (Block Element Modifier): block__element--modifier
+              Example: 
+              <ul>
+                  <li>
+                      card__title--highlighted
+                  </li>
+                  <li>
+                     CamelCase: mainHeader, productList.
+                  </li>
+                  <li>
+                    Kebab-case: main-header, product-list.
+                  </li>
+              </ul>
+            </li>
+            <li>
+              3. Avoid overly specific class names: Avoid using class names that are too specific to a single instance, like card-1 or item-2. Instead, use more general names that describe the function, such as card or item.
+              Multiple Classes on an Element:
+              You can assign multiple classes to an element by separating them with a space        
+            </li>
+          </ol>
+        </p>
+      </div>
+     </div>
+     
+     <div class="box">
+     <h3 id="images">
+        Images
+     </h3>
+     <p>
+         While developing a captivating website images play an important role. To display images in our website, we use &lt;img&gt; element along with:
+       <ul type="bullet">
+         <li> <strong>'src'</strong> attribute to indicate the source or location of the image like; file path/image's folder/image name.file format
+         </li>
+         <li>
+         <strong>'alt'</strong> attribute, short for an alternative text to be displayed incase the image cannot load or even for blind users who only use the text-to-speech feature in the browther.
+         </li>
+       </ul>
+     </p>
+     </div>
+     
+     
+     <br>
+     <br>
+  
+     </div>
+    
+     <footer>
+      <div class="footr_content">
+        <div class="home">
+          home:
+          <a href="index.html">
+            <i class="fa-solid fa-house fa-2x"></i>
+          </a>
+        </div>
+        
+        <div class="social_icons">
+         contact us: 
+       
+          <a href="https://t.me/wollostu" target="_blank">
+             <i class="fa-solid fa-paper-plane fa-3x"></i>
+          </a>
+          <a href="https//:www.linkedin.com/school/wollo-university/" target="_blank">
+            <i id="linkedIn"  class="fa-brands fa-linkedin fa-3x"></i>
+          </a>
+          <a id="youtube_icon" href="http://www.youtube.com/@WolloUniversity1" target="_blank">
+             <i class="fa-brands fa-youtube fa-3x"></i>
+          </a>
+          <a href="https://www.facebook.com/WolloUniversity111/" target="_blank">
+             <i class="fa-brands fa-facebook fa-3x"></i>
+          </a>
+        </div>
+          
+        <br>
+
+        <div id="phone_icon" class="my_contact">
+          Contact the developer:
+          <a id="envelope_icon" href="mailto:writefornatnael@gmail.com">
+            <i class="fa-solid fa-envelope fa-2x"></i>
+          </a>
+          <a  href="tel:+251927376051">
+            <i class="fa-solid fa-phone fa-2x"></i>
+             +251 927 376 051
+           </a>
+        </div>
+      </div>
+     </footer>
+
+
+     <script>
+         
+      
+
+      const navToggle = document.querySelector('.nav_toggle');
+      const navMenu = document.querySelector('.nav_menu');
+
+ 
+      navToggle.addEventListener('click', function(event) {
+           event.stopPropagation();
+
+        navMenu.style.display = navMenu.style.display === 'none' || navMenu.style.display === '' ? 'block' : 'none';
+        navMenu.classList.toggle('show');
+});
+      document.addEventListener('click', function(event) {
+         if (!navMenu.contains(event.target) && !navToggle.contains(event.target)) {
+             navMenu.style.display = 'none';   
+             navMenu.classList.remove('show');   
+    }
+});
+ 
+     </script>
+   </body>
+</html>

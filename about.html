@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+  <head>
+     <meta charset="UTF-8">
+     <meta name="Author" content="Natnael Wondu">
+     <meta name="description" content="web intro for beginers">
+     <meta name="keywords" content="HTML, front end developement, server request">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+     <title>
+         About Us- KIoT skills center
+     </title>
+     <link rel="stylesheet" href="styles.css">
+     <script src="https://kit.fontawesome.com3131841332" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+  </head>
+  <body>
+     <header>
+       <div class="header_container">
+        <div class="logo">
+            <img src="images/logo.png" alt="website logo">
+            <h1> 
+              KIoT&nbsp;Skills&nbsp;Center
+            </h1>
+        </div>
+        <div class="header_buttons">
+         <input style="display: none;" type="text">
+         <button class="search_bar">
+            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+         </button>
+         <button class="nav_toggle">
+          <i class="fa-solid fa-bars fa-2x"></i>
+         </button>
+        </div> 
+        <div class="nav_menu" style="display: none;">
+            <ul type="none">
+                <li><a href="index.html">Home</a></li>
+                <hr>
+                <li><a href="cources.html">cources</a></li>
+                <hr>
+                <li><a href="products.html">Our Products</a></li>
+                <hr>
+                <li><a href="resources.html">Suplimental Resources</a></li>
+                <hr>
+                <li><a href="mission&vission.html">Mission& Vission </a></li>
+            </ul>
+      </div>
+       </div>
+     </header>
+     
+     
+     <div>
+         <h2>
+             About Us
+         </h2>
+         <p> 
+            Welcome to our educational platform, proudly hosted by Wollo University, a premier institution located in the heart of Ethiopia. Founded in 2006, Wollo University has a rich history of providing accessible, high-quality education to students across the region. Situated in the beautiful city of Dessie, specifically Kombolcha in the Amhara region, our campus is a hub of academic excellence, serving a diverse student body from all walks of life. Our goal is to empower students at every level of their academic journey, equipping them with the skills and knowledge they need to succeed in the fast-paced, ever-evolving world of technology.     
+         </p>
+         <p>
+            Our platform serves as a comprehensive resource for students eager to deepen their expertise in various tech fields. We offer a diverse range of courses, including Front-End Development, Back-End Development, Android Development, UI/UX Design, Cloud Computing, and more. Whether you’re just starting out or looking to enhance your skills, our platform provides you with the tools, resources, and support needed to excel both academically and professionally. We are committed to helping our students stay ahead in a digital world, offering high-quality educational content that is continuously updated to reflect the latest industry trends and technologies.         
+         </p>
+         <p>
+            At Wollo University, we believe that learning is most impactful when it is collaborative. Beyond our course offerings, we are dedicated to fostering a vibrant, inclusive community where students can connect, share ideas, and collaborate on projects. Our interactive forums, group assignments, and collaborative events encourage peer-to-peer learning, enabling students to gain valuable insights from one another and build strong professional networks. Through these collaborative experiences, our students not only sharpen their technical skills but also develop critical soft skills such as communication, teamwork, and leadership—skills essential for success in today’s globalized workforce.
+         </p>
+         <p>
+          As part of our commitment to student success, we provide a supportive and nurturing environment where each learner can thrive. Our platform offers personalized mentorship and access to expert instructors, giving students the guidance they need to navigate their academic and professional goals. At Wollo University, we understand that education is about more than just knowledge—it’s about developing the confidence, creativity, and resilience to tackle the challenges of tomorrow’s digital world. Whether you are preparing for a career in tech or seeking to make a meaningful impact in your community, we are here to support you every step of the way.
+         </p> 
+     </div>
+     
+     
+
+     <footer>
+      <div class="footr_content">
+        <div class="home">
+          home:
+          <a href="index.html">
+            <i class="fa-solid fa-house fa-2x"></i>
+          </a>
+        </div>
+        
+        <div class="social_icons">
+         contact us: 
+       
+          <a href="https://t.me/wollostu" target="_blank">
+             <i class="fa-solid fa-paper-plane fa-3x"></i>
+          </a>
+          <a href="https//:www.linkedin.com/school/wollo-university/" target="_blank">
+            <i id="linkedIn"  class="fa-brands fa-linkedin fa-3x"></i>
+          </a>
+          <a id="youtube_icon" href="http://www.youtube.com/@WolloUniversity1" target="_blank">
+             <i class="fa-brands fa-youtube fa-3x"></i>
+          </a>
+          <a href="https://www.facebook.com/WolloUniversity111/" target="_blank">
+             <i class="fa-brands fa-facebook fa-3x"></i>
+          </a>
+        </div>
+          
+        <br>
+
+        <div id="phone_icon" class="my_contact">
+          Contact the developer:
+          <a id="envelope_icon" href="mailto:writefornatnael@gmail.com">
+            <i class="fa-solid fa-envelope fa-2x"></i>
+          </a>
+          <a  href="tel:+251927376051">
+            <i class="fa-solid fa-phone fa-2x"></i>
+             +251 927 376 051
+           </a>
+        </div>
+      </div>
+     </footer>
+     <script>
+           
+        
+  
+        const navToggle = document.querySelector('.nav_toggle');
+        const navMenu = document.querySelector('.nav_menu');
+  
+   
+        navToggle.addEventListener('click', function(event) {
+             event.stopPropagation();
+  
+          navMenu.style.display = navMenu.style.display === 'none' || navMenu.style.display === '' ? 'block' : 'none';
+          navMenu.classList.toggle('show');
+  });
+        document.addEventListener('click', function(event) {
+           if (!navMenu.contains(event.target) && !navToggle.contains(event.target)) {
+               navMenu.style.display = 'none';   
+               navMenu.classList.remove('show');   
+      }
+  });
+   
+       </script>
+   </body>
+</html>

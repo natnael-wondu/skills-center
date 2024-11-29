@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+  <head>
+     <meta charset="UTF-8">
+     <meta name="Author" content="Natnael Wondu">
+     <meta name="description" content="web intro for beginers">
+     <meta name="keywords" content="HTML, front end developement, server request">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+     <title>
+         Mission&Vission- kiot skills center
+     </title>
+     <link rel="stylesheet" href="styles.css">
+     <script src="https://kit.fontawesome.com3131841332" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+  </head>
+  <body>
+     <header>
+       <div class="header_container">
+        <div class="logo">
+            <img src="images/logo.png" alt="website logo">
+            <h1> 
+              KIoT&nbsp;Skills&nbsp;Center
+            </h1>
+        </div>
+        <div class="header_buttons">
+         <input style="display: none;" type="text">
+         <button class="search_bar">
+            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+         </button>
+         <button class="nav_toggle">
+          <i class="fa-solid fa-bars fa-2x"></i>
+         </button>
+        </div> 
+        <div class="nav_menu" style="display: none;">
+            <ul type="none">
+                <li><a href="index.html">Home</a></li>
+                <hr>
+                <li><a href="cources.html">cources</a></li>
+                <hr>
+                <li><a href="about.html">About Us</a></li>
+                <hr>
+                <li><a href="products.html">Our Products</a></li>
+                <hr>
+                <li><a href="resources.html">Suplimental Resources</a></li>
+                <hr>
+            </ul>
+      </div>
+       </div>
+     </header>
+     
+     
+     <div>
+         <h2>
+            Vission And Mission
+         </h2>
+         <h3>
+            vission
+         </h3>
+         <p>
+            Our vision is to become the leading hub of knowledge and innovation for all students at the campus, helping them become skilled professionals in the fast-paced tech industry. We aspire to equip our students with the expertise and confidence needed to excel in fields like Front-End and Back-End Development, UI/UX Design, Android Development, and Cloud Computing. By continually evolving our curriculum and resources, we aim to empower the next generation of tech leaders and innovators, inspiring them to make meaningful contributions to the digital world.
+         </p>
+         <p>
+            Ultimately, our goal is to establish a lasting legacy of skilled, confident, and forward-thinking professionals who are prepared to lead in a world where technology plays an increasingly central role in every aspect of life. Whether students aspire to launch their own startups, work with established tech giants, or innovate in entirely new fields, we are dedicated to helping them realize their full potential and contribute meaningfully to the digital revolution.
+         </p>
+         <h3>
+            mission
+         </h3>
+         <p>
+            Our mission is to provide high-quality, accessible, and engaging educational resources for students at our campus who are eager to learn and grow in the field of technology. We aim to foster a community of passionate learners by offering cutting-edge courses in various tech disciplines, from coding and design to cloud computing. Through our platform, we strive to create a supportive environment where students can explore new ideas, enhance their skills, and ultimately prepare for the demands of the digital world. We are dedicated to delivering an enriching learning experience that goes beyond textbooks and theory, enabling students to gain practical, hands-on experience that they can apply immediately in their careers.
+         </p>
+         <p>
+            We recognize that technology is an ever-evolving field, which is why our mission is built on a commitment to continuous improvement. We regularly update our curriculum to reflect the latest industry trends and tools, ensuring that our students are equipped with the most relevant and up-to-date skills. By working closely with industry leaders and professionals, we provide students with valuable insights into real-world challenges and job opportunities, helping them navigate their career paths with confidence. Our mission is to bridge the gap between education and employment by preparing students not just for their first job, but for a lifelong career in a dynamic and rapidly changing field.
+         </p>
+     </div>
+     
+     
+     <footer>
+      <div class="footr_content">
+        <div class="home">
+          home:
+          <a href="index.html">
+            <i class="fa-solid fa-house fa-2x"></i>
+          </a>
+        </div>
+        
+        <div class="social_icons">
+         contact us: 
+       
+          <a href="https://t.me/wollostu" target="_blank">
+             <i class="fa-solid fa-paper-plane fa-3x"></i>
+          </a>
+          <a href="https//:www.linkedin.com/school/wollo-university/" target="_blank">
+            <i id="linkedIn"  class="fa-brands fa-linkedin fa-3x"></i>
+          </a>
+          <a id="youtube_icon" href="http://www.youtube.com/@WolloUniversity1" target="_blank">
+             <i class="fa-brands fa-youtube fa-3x"></i>
+          </a>
+          <a href="https://www.facebook.com/WolloUniversity111/" target="_blank">
+             <i class="fa-brands fa-facebook fa-3x"></i>
+          </a>
+        </div>
+          
+        <br>
+
+        <div id="phone_icon" class="my_contact">
+          Contact the developer:
+          <a id="envelope_icon" href="mailto:writefornatnael@gmail.com">
+            <i class="fa-solid fa-envelope fa-2x"></i>
+          </a>
+          <a  href="tel:+251927376051">
+            <i class="fa-solid fa-phone fa-2x"></i>
+             +251 927 376 051
+           </a>
+        </div>
+      </div>
+     </footer>
+
+     <script>
+           
+        
+  
+        const navToggle = document.querySelector('.nav_toggle');
+        const navMenu = document.querySelector('.nav_menu');
+  
+   
+        navToggle.addEventListener('click', function(event) {
+             event.stopPropagation();
+  
+          navMenu.style.display = navMenu.style.display === 'none' || navMenu.style.display === '' ? 'block' : 'none';
+          navMenu.classList.toggle('show');
+  });
+        document.addEventListener('click', function(event) {
+           if (!navMenu.contains(event.target) && !navToggle.contains(event.target)) {
+               navMenu.style.display = 'none';   
+               navMenu.classList.remove('show');   
+      }
+  });
+   
+       </script>
+   </body>
+</html>

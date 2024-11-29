@@ -1,0 +1,294 @@
+body {
+  color: #000016;
+  font-family: "Roboto";
+  font-style: normal;
+}
+body,
+h1,
+button,
+input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  top: 0;
+  margin-left: 0px;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  position: sticky;
+  z-index: 999;
+}
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.logo {
+  display: flex;
+  max-width: 70px;
+  align-items: center;
+  gap: 10px;
+  margin-left: 30px;
+}
+.logo img {
+  max-width: 70px;
+  height: auto;
+}
+.header_buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_button input,
+.header_buttons button {
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.header_buttons button {
+  background: none;
+  border: none;
+  color: #ffffff;
+}
+.header_buttons :hover {
+  color: #007bff;
+  background-color: #ffffff;
+}
+.search_input {
+  display: none;
+  width: 0;
+  padding: 8px;
+  font-size: 16px;
+  margin-left: 10px;
+  border: 2px solid #007bff;
+  border-radius: 20px;
+  transition: width 0.3s ease;
+}
+
+.search_input.open {
+  display: inline-block;
+  width: 200px;
+}
+
+.nav_menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  background-color: #2c3e50;
+  color: #ffffff;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+.nav_menu.show {
+  display: block;
+  transform: translateX(0);
+  margin-left: 0px;
+}
+.nav_menu a,
+.nav_menu a:visited {
+  color: #ffffff;
+}
+.nav_menu li{
+  margin-left: 0;
+}
+
+.list_of_cources{
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: fit-content;
+  padding: 5px;
+  position: relative;
+}
+
+.list_of_cources a{
+  color: #007bff;
+  align-items: center;
+}
+
+.message {
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  font-size: 12px;
+}
+
+.list_of_cources:hover .message{
+  opacity: 1;
+} 
+
+h2 {
+  margin-left: 50px;
+}
+h3 {
+  margin-left: 50px;
+}
+p {
+  margin-left: 50px;
+  margin-right: 200px;
+  text-align: justify;
+  font-size: 20px;
+}
+.out_of_topic {
+  clear: both;
+}
+
+li {
+  margin-left: 50px;
+  margin-right: 200px;
+  font-size: 20px;
+}
+h1 {
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none !important;
+}
+a.visited {
+  color: #687efa;
+}
+#diagram {
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+  margin: 30px;
+  margin-left: 50px;
+  float: left;
+}
+
+#ranking {
+  width: 500px;
+  height: 400px;
+  border-radius: 10px;
+  margin: 30px;
+  margin-right: 350px;
+  float: right;
+}
+#description {
+  margin-top: 100px;
+}
+Button {
+  padding: 5px 5px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #027ac5;
+  color: #ffffff;
+  border: #bdbcc7;
+}
+
+h2 {
+  color: #34495e;
+}
+h3 {
+  color: #0d437a;
+}
+h4 {
+  color: #5a5bdc;
+}
+
+.box {
+  width: fit-content;
+  border: 3px, outset, #bdc3c7;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.box_with_image {
+  width: fit-content;
+  height: max-content;
+  border: 3px, outset, #bdc3c7;
+  border-radius: 5px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.scrollable_box {
+  height: 200px;
+  overflow-y: auto;
+  border: 2px, outset, #b8ccd8;
+  border-radius: 5px;
+  margin-right: 70px;
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.resource_container,
+.resource_container a {
+  color: #027ac5;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+}
+
+footer {
+  padding: 20px;
+  width: 100%;
+  bottom: 0;
+  margin-bottom: 0;
+  margin-top: auto;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  height: fit-content;
+}
+.footer_contetnt {
+  align-items: center;
+}
+
+.social_icons {
+  display: flex;
+  gap: 30px;
+  margin-left: 250px;
+}
+.social_icons a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.social_icons :hover {
+  color: #007bff;
+}
+#youtube_icon :hover {
+  color: red;
+}
+
+.home {
+  float: left;
+  gap: 30px;
+  margin-left: 150px;
+  margin-right: 20px;
+}
+.home a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.home :hover {
+  color: #007bff;
+}
+
+.my_contact{
+  display: flex;
+  gap: 30px;
+  margin-left: 150px;
+  margin-right: 20px;
+}
+.my_contact a, .my_contact a:visited{
+  color: #000000;
+}
+#envelope_icon :hover {
+  color: #ffb300;
+}
+#phone_icon :hover{
+  color: #ffffff;
+}
